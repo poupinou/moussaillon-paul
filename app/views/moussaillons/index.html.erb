@@ -1,0 +1,14 @@
+<% @mouss.each do |mou| %>
+	<h1> <%= mou.first_name %> </h1>
+	<p><%= mou.age %> </p>
+	<a href='<%=moussaillon_path(mou.id) %>'>voir le profil</a>
+	<a href='<%=edit_moussaillon_path(mou.id) %>'>éditer le profil</a>
+	<%end%>
+
+
+
+
+
+
+
+

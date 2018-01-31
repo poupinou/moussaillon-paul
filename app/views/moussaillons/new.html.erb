@@ -1,0 +1,13 @@
+
+<h1>inscrit toi</h1>
+
+<%= form_for @mouss do |mous| %>
+  <%= mous.text_field :first_name %>
+ 
+    <%= mous.text_field :age %>
+  <button type="submit">s'inscrire</button>
+<%= radio_button_tag(:likeness, "kebab") %>
+	<%= label_tag(:likeness, "kebab") %>
+<%= radio_button_tag(:likeness, "hummus") %>
+	<%= label_tag(:likeness, "hummus") %>
+<% end %>

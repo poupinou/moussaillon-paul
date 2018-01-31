@@ -1,0 +1,17 @@
+<h1>Editer ton profil</h1>
+
+<%= form_for @moussaillon do |mouss| %>
+  <%= mouss.text_field :first_name %>
+ 
+    <%= mouss.text_field :age %>
+  <button type="submit">Modifier le profil</button>
+  <% form.label :likeness %>
+  <%= radio_button_tag(:likeness, "kebab", :value => "kebab") %>
+	<%= label_tag(:likeness, "kebab", :value => "kebab") %>
+<%= radio_button_tag(:likeness, "hummus", :value => "hummus") %>
+	<%= label_tag(:likeness, "hummus", :value => "kebab") %>
+	
+
+<% end %>
+  <%= link_to 'Clique pour détruire', @mouss, method: :delete %>
+
